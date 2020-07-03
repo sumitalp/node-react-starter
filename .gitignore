@@ -1,1 +1,14 @@
+node_modules
 .DS_Store
+dist
+build
+*.log
+.env
+docs
+uploads
+public
+dump.rdb
+*.lock.json
+temp
+*/ormconfig.json
+.idea/

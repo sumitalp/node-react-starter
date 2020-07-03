@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  web:
+    build: .
+    command: npm run start:dev
+    volumes:
+      - ./api/:/usr/src/app/
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    environment:
+      DATABASE_URL: postgres://auxillium:auxillium@postgres/auxillium
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: auxillium
+      POSTGRES_PASSWORD: auxillium
+      POSTGRES_DB: auxillium
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+
+volumes:
+  pg-data:

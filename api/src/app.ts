@@ -21,7 +21,7 @@ createConnection().then(async connection => {
   // Set all routes from routes folder
   app.use("/", routes);
 
-  const port = 11000;
+  const port = 3000;
   app.get('/', (req, res) => {
     res.send('The sedulous hyena ate the antelope! lsdkjflasdjk');
   });
