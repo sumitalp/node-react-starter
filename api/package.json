@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "class-validator": "^0.12.2",
+    "class-validator": "^0.14.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "helmet": "^3.22.0",
